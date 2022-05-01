@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1607015805 source:d:\codeblocks_projects\roata norocului\main.cpp
+	<iostream>
+	<graphics.h>
+	<math.h>
+	<windows.h>
+	<fstream>
+	<cstring>
+
