@@ -17,6 +17,7 @@ short int nrintrb;
 char v[NMAX][LGMAX], rasp[NMAX], litera, r[NMAX][LGMAX];
 int n, i, nrchar;
 int poly[6], ursuledatedeadura;
+
 int main()
 {
     srand(time(NULL));
@@ -30,7 +31,7 @@ int main()
 
     long double i0=0,i1=45,i2=90,i3=135,i4=180,i5=225,i6=270,i7=315,i8=360;
 
-    setfillstyle(SOLID_FILL, RED+YELLOW);
+    setfillstyle(SOLID_FILL, 12);
     floodfill(midx, midy, RED+YELLOW);
 
     setcolor(GREEN);
@@ -95,7 +96,7 @@ int main()
                 swapbuffers();
                 cat = rand() * rand();
                 //cout<<cat<<'\n';
-                setcolor(RED+YELLOW);
+                setcolor(12);
 
                 i0-=unghi;
                 i1-=unghi;
@@ -107,8 +108,8 @@ int main()
                 i7-=unghi;
                 i8-=unghi;
 
-                setfillstyle(SOLID_FILL, RED+YELLOW);
-                floodfill(midx, midy, RED+YELLOW);
+                setfillstyle(SOLID_FILL, 12);
+                floodfill(midx, midy, 12);
 
                 setcolor(GREEN);
                 setfillstyle(SOLID_FILL, GREEN);
@@ -159,9 +160,9 @@ int main()
             i6-=unghi;
             i7-=unghi;
             i8-=unghi;
-            setcolor(RED+YELLOW);
-            setfillstyle(SOLID_FILL, RED+YELLOW);
-            floodfill(midx, midy, RED+YELLOW);
+            setcolor(12);
+            setfillstyle(SOLID_FILL, 12);
+            floodfill(midx, midy, 12);
 
             setcolor(GREEN);
             setfillstyle(SOLID_FILL, GREEN);
